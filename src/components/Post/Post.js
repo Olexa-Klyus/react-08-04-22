@@ -1,7 +1,9 @@
-export const Comments = () => {
+const Post = () => {
     return (
         <div>
 
         </div>
     );
 };
+
+export default Post;
