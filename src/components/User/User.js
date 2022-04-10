@@ -1,4 +1,4 @@
-const User = ({user}) => {
+export const User = ({user}) => {
     return (
         <div>
             <span>{user.id}</span>
