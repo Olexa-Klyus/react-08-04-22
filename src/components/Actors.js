@@ -30,7 +30,7 @@ const Actors = () => {
                     alt={'Jerry'}/>
             </div>
 
-            {/*або можнна так передати дані в props компоненти Actor і викликати компоненту */}
+            {/*або можнна так передати дані в props компоненти Actor і викликати компоненту яка відпрацює як функція*/}
             <Actor name={actorsArr[0].name}
                    img={actorsArr[0].img}/>
             <Actor name={actorsArr[1].name}
