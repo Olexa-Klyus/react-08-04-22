@@ -1,11 +1,12 @@
-import './App.css';
+import css from './App.module.css';
+
+import {Users} from "./components";
 
 function App() {
 
   return (
-    <div>
-
-
+    <div className={css.w250}>
+      <Users/>
     </div>
   );
 }
