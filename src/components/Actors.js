@@ -30,9 +30,13 @@ const Actors = () => {
                     alt={'Jerry'}/>
             </div>
 
+            {/*або можнна так передати дані в props компоненти Actor і викликати компоненту */}
             <Actor name={actorsArr[0].name}
-                   img={'https://w7.pngwing.com/pngs/222/493/png-transparent-jerry-mouse-tom-cat-tom-and-jerry-actor-celebrities-mammal-heroes.png'}/>
+                   img={actorsArr[0].img}/>
+            <Actor name={actorsArr[1].name}
+                   img={actorsArr[1].img}/>
 
+            {/*або ввести key промапити масив*/}
             {actorsArr.map(value => <Actor key={value.id} name={value.name} img={value.img}/>)}
 
         </div>

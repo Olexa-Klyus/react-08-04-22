@@ -5,7 +5,7 @@ const Users = () => {
     const [users, setUsers] = useState([])
 
 
-// useEffect виконується після того , як виконається return
+// useEffect виконується після того , як виконається його return
     useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/users')
             .then(value => value.json())
