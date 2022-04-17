@@ -1,12 +1,15 @@
 import './App.css';
-import {Form1, Form2} from "./components";
+import {CarForm, Cars} from "./components";
 
 function App() {
 
     return (
         <div>
             {/*<Form1/>*/}
-            <Form2/>
+            {/*<Form2/>*/}
+            <CarForm/>
+            <hr/>
+            <Cars/>
         </div>
     );
 }
