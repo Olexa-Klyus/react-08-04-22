@@ -1,9 +1,10 @@
 import {useEffect, useState} from "react";
 
 import {usersService} from "../../services";
-import User from "../User/User";
+import {User} from "../User/User";
 
-export const Users = () => {
+
+const Users = () => {
     const [users, setUsers] = useState(null);
     useEffect(()=>{
         usersService.getAllUsers().then(value=>setUsers(value));
@@ -17,3 +18,5 @@ export const Users = () => {
         </div>
     );
 };
+
+export {Users}
