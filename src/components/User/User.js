@@ -1,7 +1,9 @@
-const User = () => {
+const User = ({user,setUser}) => {
     return (
         <div>
-            User
+            <span>{user.id}</span>
+            <span>{user.name}</span>
+            <button onClick={()=>setUser(user)}>show info</button>
         </div>
     );
 };
